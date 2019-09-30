@@ -7,6 +7,7 @@
 #include <iostream>
 #include <iomanip>
 #include "Point.h"
+#include <cstring>
 using namespace std;
 
 class Shape{
@@ -19,7 +20,7 @@ class Shape{
             strcpy(shapeName, name);
         }
         ~Shape();
-
+        void move(double dx, double dy);
         const Point& getOrigin()const{return origin;}
         const char* getName(){return shapeName;}
         void display()const;

@@ -24,6 +24,13 @@ double Shape::distance (Shape& the_shape, Shape& other){
     return Point::distance(the_shape.origin, other.origin);
 }
 
+void Shape::move(double dx, double dy){
+    double newX = this->origin.getX() + dx;
+    this->origin.setX(newX);
+    double newY = this->origin.getY() + dy; 
+    this->origin.setY(newY);
+}
+
 int main(){
     Point p(2.0, 2.0);
     Point p2(19.0, 4.0);
@@ -31,6 +38,7 @@ int main(){
     Shape s (p, "YUHH");
     Shape s1 (p2, "YUHH");
     // s.display();
+    
     cout<<Shape::distance(s, s1);
     return 0;
 }
