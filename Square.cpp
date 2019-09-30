@@ -9,10 +9,10 @@
 using namespace std;
 
 Square::~Square(){
-    Shape::~Shape();
+    
 }
 
-int main(){
+/*int main(){
     Point p2(19.0, 4.0);
     
     // Shape s (p, "YUHH");
@@ -20,4 +20,4 @@ int main(){
     Square p(p2, "sqyarer", 6.9);
     p.display();
     return 0;
-}
+} */
