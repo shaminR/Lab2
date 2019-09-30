@@ -19,6 +19,8 @@ class Shape{
             strcpy(shapeName, name);
         }
         ~Shape();
+        Shape(const Shape& source);
+        Shape& operator=(const Shape& rhs);
 
         const Point& getOrigin()const{return origin;}
         const char* getName(){return shapeName;}
