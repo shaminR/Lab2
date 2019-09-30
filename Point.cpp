@@ -29,12 +29,12 @@ Point& Point::operator =(const Point& rhs){
     return *this;
 }
 
-int main(void){
-    Point p(2.0, 2.0);
-    Point p2(0.0, 0.0);
-    double yuh = p.distance(p2);
+// int main(void){
+//     Point p(2.0, 2.0);
+//     Point p2(0.0, 0.0);
+//     double yuh = p.distance(p2);
 
-    cout<<yuh;
+//     cout<<yuh;
 
-    return 0;
-}
+//     return 0;
+// }

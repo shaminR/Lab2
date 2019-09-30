@@ -24,6 +24,7 @@ class Shape{
         const char* getName(){return shapeName;}
         void display()const;
         double distance (const Shape& other)const;
+        static double distance (Shape& the_shape, Shape& other);
 };
 
 #endif
