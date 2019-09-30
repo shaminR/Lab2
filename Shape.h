@@ -11,7 +11,7 @@
 using namespace std;
 
 class Shape{
-    private:    
+    protected:    
         Point origin;
         char* shapeName;
     public:

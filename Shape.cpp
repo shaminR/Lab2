@@ -50,15 +50,15 @@ Shape& Shape::operator=(const Shape& rhs){
     origin= rhs.origin;return*this;
 }
 
-int main(){
-    Point p(2.0, 2.0);
-    Point p2(19.0, 4.0);
+// int main(){
+//     Point p(2.0, 2.0);
+//     Point p2(19.0, 4.0);
     
-    Shape s (p, "YUHH");
-    Shape s1 (p2, "YUHH");
-    // s.display();
+//     Shape s (p, "YUHH");
+//     Shape s1 (p2, "YUHH");
+//     // s.display();
     
-    cout<<Shape::distance(s, s1);
-    return 0;
-}
+//     cout<<Shape::distance(s, s1);
+//     return 0;
+// }
 
