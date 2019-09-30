@@ -7,10 +7,6 @@
 #include "Point.h"
 using namespace std;
 
-Shape::~Shape(){
-    delete shapeName;
-}
-
 void Shape::display()const{
     cout<<endl<<"Shape Name: "<<shapeName;
     this->origin.display();
@@ -29,6 +25,29 @@ void Shape::move(double dx, double dy){
     this->origin.setX(newX);
     double newY = this->origin.getY() + dy; 
     this->origin.setY(newY);
+}
+Shape::~Shape(){
+    delete[] shapeName;
+}
+Shape::Shape(const Shape& source):origin(source.origin), shapeName(0){
+    if(shapeName== NULL){
+        cerr<< "Memory not available...";
+        exit(1);
+    }
+    shapeName = new char[(int)strlen(source.shapeName) + 1];
+    strcpy(shapeName, source.shapeName);
+}
+
+Shape& Shape::operator=(const Shape& rhs){
+    if(this==&rhs)
+        return*this;
+    delete[] shapeName;
+    shapeName = new char[strlen(rhs.shapeName)+1];
+    if(shapeName== NULL){
+        cerr<< "Memory not available...";exit(1);
+    }
+    strcpy(shapeName, rhs.shapeName);
+    origin= rhs.origin;return*this;
 }
 
 int main(){
