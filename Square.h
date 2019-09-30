@@ -9,7 +9,7 @@
 using namespace std;
 
 class Square: public Shape{
-    private:
+    protected:
         double side_a;
     public:
         Square(const Point& o, const char* name, double sideLength): Shape(o, name), side_a(sideLength){}
@@ -18,8 +18,10 @@ class Square: public Shape{
         double area(){return side_a * side_a;}
         double perimeter(){return 4 * side_a;}
         void display(){
-            cout<<endl<<"Shape Name: "<<shapeName;
-            
+            Shape::display();
+            cout<<"Side a: "<<side_a<<endl;
+            cout<<"Area: "<<area()<<endl;
+            cout<<"Perimeter: "<<perimeter()<<endl;
         }
 };
 
