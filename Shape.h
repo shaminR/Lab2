@@ -25,12 +25,10 @@ class Shape{
         Shape& operator=(const Shape& rhs);
 
         const Point& getOrigin()const{return origin;}
-        const char* getName(){return shapeName;}
+        const char* getName()const{return shapeName;}
         void display()const;
         double distance (const Shape& other)const;
         static double distance (Shape& the_shape, Shape& other);
-        Point& getOrigin()const{return origin;}
-        char* getName()const{return shapeName;}
 };
 
 #endif
