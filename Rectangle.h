@@ -24,6 +24,8 @@ class Rectangle: public Square{
         }
         double area(){return side_a * side_b;}
         double perimeter(){return  (2 * side_a) + (2 * side_b);}
+        double getSideLength(){return side_b;}
+        void setSideLength(double side){side_b = side;}
 };
 
 
