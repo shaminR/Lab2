@@ -19,7 +19,11 @@ class Rectangle: public Square{
             Shape::display();
             cout<<"Side a: "<< side_a << endl;
             cout<<"Side b: "<< side_b << endl;
+            cout<<"Area: "<<area()<<endl;
+            cout<<"Perimeter: "<<perimeter()<<endl;
         }
+        double area(){return side_a * side_b;}
+        double perimeter(){return  (2 * side_a) + (2 * side_b);}
 };
 
 
