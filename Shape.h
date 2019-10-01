@@ -15,7 +15,7 @@ class Shape{
         Point origin;
         char* shapeName;
     public:
-        Shape(const Point& o, const char* name):origin(o), shapeName(0){
+        Shape(double x, double y, const char* name):origin(Point(x, y)), shapeName(0){
             shapeName = new char[(int)strlen(name) + 1];
             strcpy(shapeName, name);
         }

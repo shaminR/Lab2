@@ -29,12 +29,12 @@ void Shape::move(double dx, double dy){
 Shape::~Shape(){
     delete[] shapeName;
 }
-Shape::Shape(const Shape& source):origin(source.origin), shapeName(0){
+Shape::Shape(const Shape& source):origin(source.origin), shapeName(new char[strlen(source.shapeName)+1]){
     if(shapeName== NULL){
         cerr<< "Memory not available...";
         exit(1);
     }
-    shapeName = new char[(int)strlen(source.shapeName) + 1];
+    // shapeName = new char[(int)strlen(source.shapeName) + 1];
     strcpy(shapeName, source.shapeName);
 }
 
@@ -51,6 +51,12 @@ Shape& Shape::operator=(const Shape& rhs){
 }
 
 // int main(){
+//     Shape s(1.0, 2.0, "yuhh");
+//     s.display();
+//     return 0;
+// }
+
+// int main(){
 //     Point p(2.0, 2.0);
 //     Point p2(19.0, 4.0);
     
@@ -61,4 +67,3 @@ Shape& Shape::operator=(const Shape& rhs){
 //     cout<<Shape::distance(s, s1);
 //     return 0;
 // }
-

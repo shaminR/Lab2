@@ -12,7 +12,7 @@ class Square: public Shape{
     protected:
         double side_a;
     public:
-        Square(const Point& o, const char* name, double sideLength): Shape(o, name), side_a(sideLength){}
+        Square(double x, double y, const char* name, double sideLength): Shape(x, y, name), side_a(sideLength){}
         ~Square();
 
         double area(){return side_a * side_a;}
@@ -23,8 +23,8 @@ class Square: public Shape{
             cout<<"Area: "<<area()<<endl;
             cout<<"Perimeter: "<<perimeter()<<endl;
         }
-        double getSideLength(){return side_a;}
-        void setSideLength(double side){side_a = side;}
+        double getSideA(){return side_a;}
+        void setSideA(double side){side_a = side;}
 };
 
 #endif

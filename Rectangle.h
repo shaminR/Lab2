@@ -13,7 +13,7 @@ class Rectangle: public Square{
     private:
         double side_b;
     public:
-        Rectangle(const Point& o, const char* name, double sideLength_a, double sideLength_b): Square(o, name, sideLength_a), side_b(sideLength_b){}
+        Rectangle(double x, double y, const char* name, double sideLength_a, double sideLength_b): Square(x, y, name, sideLength_a), side_b(sideLength_b){}
         ~Rectangle();
         void display(){
             Shape::display();
@@ -24,8 +24,8 @@ class Rectangle: public Square{
         }
         double area(){return side_a * side_b;}
         double perimeter(){return  (2 * side_a) + (2 * side_b);}
-        double getSideLength(){return side_b;}
-        void setSideLength(double side){side_b = side;}
+        double getSideB(){return side_b;}
+        void setSideB(double side){side_b = side;}
 };
 
 

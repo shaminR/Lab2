@@ -12,13 +12,13 @@ Square::~Square(){
     
 }
 
-int main(){
-    Point p2(19.0, 4.0);
+// int main(){
+//     Point p2(19.0, 4.0);
     
-    // Shape s (p, "YUHH");
+//     // Shape s (p, "YUHH");
 
-    Square p(p2, "sqyarer", 6.9);
-    const char* nam  = p.getName();
-    cout<<nam<<endl;
-    return 0;
-}
+//     Square p(p2, "sqyarer", 6.9);
+//     const char* nam  = p.getName();
+//     cout<<nam<<endl;
+//     return 0;
+// }
