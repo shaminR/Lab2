@@ -23,6 +23,8 @@ class Square: public Shape{
             cout<<"Area: "<<area()<<endl;
             cout<<"Perimeter: "<<perimeter()<<endl;
         }
+        double getSideLength(){return side_a;}
+        void setSideLength(double side){side_a = side;}
 };
 
 #endif

@@ -29,6 +29,8 @@ class Shape{
         void display()const;
         double distance (const Shape& other)const;
         static double distance (Shape& the_shape, Shape& other);
+        Point& getOrigin()const{return origin;}
+        char* getName()const{return shapeName;}
 };
 
 #endif
