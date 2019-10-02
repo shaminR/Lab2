@@ -27,6 +27,8 @@ class Shape{
         const Point& getOrigin()const{return origin;}
         const char* getName()const{return shapeName;}
         virtual void display() = 0;
+        virtual double area() = 0;
+        virtual double perimeter() = 0;
         double distance (const Shape& other)const;
         static double distance (Shape& the_shape, Shape& other);
 };

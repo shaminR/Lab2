@@ -16,7 +16,7 @@ void GraphicsWorld::run(){
     cout<< "\nThe distance between m and n is again: "<<Point::distance(m, n);
     #endif             
     // end of block to test Point
-    #if 1// Change 0 to 1 to test Square
+    #if 1   // Change 0 to 1 to test Square
     cout<< "\n\nTesting Functions in class Square:"<<endl;
     Square s(5, 7, "SQUARE -S", 12);
     s.display();
@@ -54,7 +54,7 @@ void GraphicsWorld::run(){
 
     #endif  // end of block to test Rectangle
 
-    #if 1   // Change 0 to 1 to test using array of pointer and polymorphism
+    #if  0  // Change 0 to 1 to test using array of pointer and polymorphism
     cout << "\nTesting array of pointers and polymorphism:"<<endl;
     Shape* sh[4];
     sh[0] = &s;
@@ -67,16 +67,17 @@ void GraphicsWorld::run(){
     sh [3]->display();
 
     #endif             // end of block to test array of pointer and polymorphism
-#if 0
+
+    #if 1
     cout << "\nTesting Functions in class Circle:" <<endl;
-    Circle c (3, 5, 9, "CIRCLE C");
+    Circle c (3, 5, "CIRCLE C", 9);
     c.display();
     cout << "the area of " << c.getName() <<" is: "<< c.area() << endl;
     cout << "the perimeter of " << c.getName() << " is: "<< c.perimeter() << endl;
-    d = a.distance(c);
+     d = a.distance(c);
     cout << "\nThe distance between rectangle a and circle c is: " <<d;
 
-    CurveCut rc (6, 5, 10, 12, 9, "CurveCut rc");
+    CurveCut rc (6, 5, "CurveCut rc", 10, 12, 9);
     rc.display();
     cout << "the area of " << rc.getName() <<" is: "<< rc.area();
     cout << "the perimeter of " << rc.getName() << " is: "<< rc.perimeter();
@@ -104,16 +105,17 @@ void GraphicsWorld::run(){
     CurveCut cc = rc;
     cc.display();
     cout << "\nTesting assignment operator in class CurveCut:" <<endl;
-    CurveCut cc2(2, 5, 100, 12, 9, "CurveCut cc2");
+    CurveCut cc2(2, 5, "CurveCut cc2", 100, 12, 9);
     cc2.display();
     cc2 = cc;
     cc2.display();
-#endif
+
+    #endif
 }
 
 
-/*int main(){
+int main(){
     GraphicsWorld g;
     g.run();
     return 0;
-}*/
+}

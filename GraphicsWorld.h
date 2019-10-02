@@ -7,6 +7,8 @@
 #include "Square.h"
 #include "Shape.h"
 #include "Rectangle.h"
+#include "Circle.h"
+#include "CurveCut.h"
 #include <cstring>
 using namespace std;
 
