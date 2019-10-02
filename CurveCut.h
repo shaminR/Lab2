@@ -23,7 +23,9 @@ class CurveCut: public Circle, public Rectangle{
         double area();
         double perimeter();
         void display(){
-            Shape::display();
+            // Shape::display();
+            cout<<"CurveCut name: "<<shapeName<<endl;
+            cout<<origin.display();
             cout<<"Width: "<<side_a<<endl;
             cout<<"Length: "<<side_b<<endl;
             cout<<"Radius of the cut: "<<radius<<endl;

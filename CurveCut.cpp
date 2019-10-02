@@ -22,9 +22,9 @@ double CurveCut::perimeter(){
 
 CurveCut::~CurveCut(){}
 
-int main(){
-    CurveCut c(1.0, 2.0, "nameyuh", 4.0, 6.0, 1.0);
-    c.display();
+// int main(){
+//     CurveCut c(1.0, 2.0, "nameyuh", 4.0, 6.0, 1.0);
+//     c.display();
 
-    return 0;
-}
+//     return 0;
+// }

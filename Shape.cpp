@@ -7,10 +7,10 @@
 #include "Point.h"
 using namespace std;
 
-void Shape::display()const{
-    cout<<endl<<"Shape Name: "<<shapeName;
-    this->origin.display();
-}
+// void Shape::display()const{
+//     cout<<endl<<"Shape Name: "<<shapeName;
+//     this->origin.display();
+// }
 
 double Shape::distance (const Shape& other)const{
     double ans =  this->origin.distance(other.origin);
