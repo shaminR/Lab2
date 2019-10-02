@@ -13,7 +13,7 @@ class Rectangle: public Square{
     protected:
         double side_b;
     public:
-        Rectangle(double x, double y, const char* name, double sideLength_a, double sideLength_b): Square(x, y, name, sideLength_a), side_b(sideLength_b){}
+        Rectangle(double x, double y, const char* name, double sideLength_a, double sideLength_b): Shape(x, y, name), Square(x, y, name, sideLength_a), side_b(sideLength_b){}
         ~Rectangle();
         void display(){
             Shape::display();
