@@ -12,7 +12,7 @@ Circle::~Circle(){
 
 }
 
-int main(){
-    Circle c(1.0,2.0,"hehe", 1.0);
-    c.display();
-}
+// int main(){
+//     Circle c(1.0,2.0,"hehe", 1.0);
+//     c.display();
+// }

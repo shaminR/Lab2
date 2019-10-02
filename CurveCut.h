@@ -9,6 +9,8 @@
 #include "Square.h"
 #include "Rectangle.h"
 #include "Shape.h"
+#include "Circle.h"
+#include <math.h>
 #include <cstring>
 
 class CurveCut: public Circle, public Rectangle{

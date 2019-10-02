@@ -8,7 +8,7 @@
 #include <cstring>
 using namespace std;
 
-class Square: public Shape{
+class Square: virtual public Shape{
     protected:
         double side_a;
     public:

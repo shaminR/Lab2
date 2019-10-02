@@ -10,7 +10,7 @@
 using namespace std;
 
 class Rectangle: public Square{
-    private:
+    protected:
         double side_b;
     public:
         Rectangle(double x, double y, const char* name, double sideLength_a, double sideLength_b): Square(x, y, name, sideLength_a), side_b(sideLength_b){}

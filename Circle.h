@@ -6,10 +6,11 @@
 #include "Point.h"
 #include "Square.h"
 #include "Shape.h"
+#include <math.h>
 #include <cstring>
 using namespace std;
 
-class Circle: public Shape{
+class Circle: virtual public Shape{
 protected: 
     double radius;
 public:
