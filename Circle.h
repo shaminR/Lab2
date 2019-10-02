@@ -17,7 +17,9 @@ public:
     Circle (double x, double y, const char* name, double rad): Shape(x, y, name), radius(rad){}
     ~Circle();
     void display(){
-            Shape::display();
+            // Shape::display();
+            cout<<"Circle name "<< shapeName << endl;
+            cout<<origin.display();
             cout<<"Radius "<< radius << endl;
             cout<<"Area: "<<area()<<endl;
             cout<<"Perimeter: "<<perimeter()<<endl;
