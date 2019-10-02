@@ -17,7 +17,7 @@ double CurveCut::area(){
 double CurveCut::perimeter(){
     double rectP = Rectangle::perimeter() - 2.0 * radius;
     double circleP = Circle::perimeter() / 4.0;
-    return rectP - circleP;
+    return rectP + circleP;
 }
 
 CurveCut::~CurveCut(){}
