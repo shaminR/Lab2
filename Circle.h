@@ -18,7 +18,7 @@ public:
     ~Circle();
     void display(){
             // Shape::display();
-            cout<<"Circle name "<< shapeName << endl;
+            cout<<endl<<"Circle name "<< shapeName;
             origin.display();
             cout<<"Radius "<< radius << endl;
             cout<<"Area: "<<area()<<endl;
