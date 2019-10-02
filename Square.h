@@ -18,7 +18,8 @@ class Square: virtual public Shape{
         double area(){return side_a * side_a;}
         double perimeter(){return 4 * side_a;}
         void display(){
-            Shape::display();
+            cout<<endl<<"Square Name: "<<shapeName;
+            this->origin.display();
             cout<<"Side a: "<<side_a<<endl;
             cout<<"Area: "<<area()<<endl;
             cout<<"Perimeter: "<<perimeter()<<endl;

@@ -16,7 +16,8 @@ class Rectangle: public Square{
         Rectangle(double x, double y, const char* name, double sideLength_a, double sideLength_b): Shape(x, y, name), Square(x, y, name, sideLength_a), side_b(sideLength_b){}
         ~Rectangle();
         void display(){
-            Shape::display();
+            cout<<endl<<"Rectangle Name: "<<shapeName;
+            this->origin.display();
             cout<<"Side a: "<< side_a << endl;
             cout<<"Side b: "<< side_b << endl;
             cout<<"Area: "<<area()<<endl;
