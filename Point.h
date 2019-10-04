@@ -10,12 +10,13 @@ using namespace std;
 
 class Point{
     private:
+        static int count;
         int id;
         double x;
         double y;
 
     public:
-        Point(double xCoord, double yCoord): x(xCoord), y(yCoord){}
+        Point(double xCoord, double yCoord): x(xCoord), y(yCoord){id = count++;}
         
         void display()const{
             cout<<fixed;
@@ -28,8 +29,12 @@ class Point{
         static double distance(const Point& first, const Point& second);
         double getX()const{return x;}
         double getY()const{return y;}
+        int getID(){return id;}
         void setY(double yCoord){y = yCoord;}
         void setX(double xCoord){x = xCoord;}
+        static int counter(){
+            return count - 1001;
+        }
 };
 
 #endif

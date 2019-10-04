@@ -4,6 +4,8 @@
 #include "Point.h"
 using namespace std;
 
+int Point::count = 1001;
+
 double Point::distance(const Point& other)const{
     double xDist = this->x - other.x;
     xDist *= xDist;
@@ -32,9 +34,11 @@ Point& Point::operator =(const Point& rhs){
 // int main(void){
 //     Point p(2.0, 2.0);
 //     Point p2(0.0, 0.0);
-//     double yuh = p.distance(p2);
+//     Point p3(9.0, 2.0);
 
-//     cout<<yuh;
+//     int yuh = p3.counter();
+
+//     cout<<yuh<<endl;
 
 //     return 0;
 // }
